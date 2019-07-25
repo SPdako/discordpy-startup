@@ -19,5 +19,9 @@ async def ping(ctx):
 async def hello(ctx):
     await ctx.send('こんにちは！私はpunra(ぷんら)。この鯖のお手伝いさんだよ！~~(予定)~~え、誰かに似てるって？そ、、、そんなはずないでしょっ！')
     
+@bot.command()
+async def help(ctx):
+    await ctx.send('```【/ping】 pongと言い返すよ。テスト用だからしばらくしたらなくなるよ　【/help】このヘルプを呼び出すよ　【/hello】挨拶するよ！```')
+    
     
 bot.run(token)
