@@ -15,5 +15,9 @@ async def on_command_error(ctx, error):
 async def ping(ctx):
     await ctx.send('pong')
 
-
+@bot.command()
+async def hello(ctx):
+    await ctx.send('こんにちは！私はpunra(ぷんら)。この鯖のお手伝いさんだよ！~~(予定)~~え、誰かに似てるって？そ、、、そんなはずないでしょっ！')
+    
+    
 bot.run(token)
