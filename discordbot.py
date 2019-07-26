@@ -53,4 +53,9 @@ async def notpnr(ctx):
     reply = f'{ctx.author.mention} 役職を設定したよ！'
     await ctx.send(reply)
     
+@bot.command()
+async def newshop(ctx):
+    category = bot.get_channel(個人ショップ)
+    await category.create_text_channel(ctx.author.name)
+    
 bot.run(token)
