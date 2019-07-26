@@ -55,7 +55,7 @@ async def notpnr(ctx):
     
 @bot.command()
 async def newshop(ctx):
-    category = bot.get_channel(shop)
+    category = bot.get_channel(579994073532989453)
     await category.create_text_channel(ctx.author.name)
     
 bot.run(token)
