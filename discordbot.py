@@ -19,7 +19,7 @@ async def ping(ctx):
 
 @bot.command()
 async def pnrhello(ctx):
-    await ctx.send('こんにちは！私はpunra(ぷんら)。この鯖のお手伝いさんだよ！~~(予定)~~え、誰かに似てるって？そ、、、そんなはずないでしょっ！')
+    await ctx.send('こんにちは！私はpunra(ぷんら)。この鯖のお手伝いさんだよ！\nえ、誰かに似てるって？そ、、、そんなはずないでしょっ！')
     
 @bot.command()
 async def pnrhelp(ctx):
