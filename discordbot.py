@@ -23,7 +23,7 @@ async def pnrhello(ctx):
     
 @bot.command()
 async def pnrhelp(ctx):
-    await ctx.send('```【/ping】 pongと言い返すよ。テスト用だからしばらくしたらなくなるよ\n【/pnrhelp】このヘルプを呼び出すよ\n【/pnrhello】挨拶するよ！\n【/ppq、/cf、/sg、/notpnr】それぞれ、役職を付けるよ！詳しくは鯖の"#お知らせ を見てね"```')
+    await ctx.send('```【/ping】 pongと言い返すよ。テスト用だからしばらくしたらなくなるよ\n【/pnrhelp】このヘルプを呼び出すよ\n【/pnrhello】挨拶するよ！\n【/ppq、/cf、/sg、/notpnr】それぞれ、役職を付けるよ！詳しくは鯖の"#お知らせ"を見てね```')
     
 @bot.command()
 async def ppq(ctx):
