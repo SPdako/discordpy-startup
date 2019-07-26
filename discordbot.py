@@ -23,6 +23,11 @@ async def pnrhello(ctx):
 async def pnrhelp(ctx):
     await ctx.send('```【/ping】 pongと言い返すよ。テスト用だからしばらくしたらなくなるよ　【/help】このヘルプを呼び出すよ　【/hello】挨拶するよ！```')
     
-
+@bot.command()
+async def ppq(ctx):
+    role = discord.utils.get(ctx.guild.roles, name='パトルプッシャーカンテサンス勢')
+    await ctx.author.add_roles(role)
+    reply = f'{ctx.author.mention} 役職を設定したよ！'
+    await ctx.send(reply)
         
 bot.run(token)
