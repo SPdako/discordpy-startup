@@ -23,12 +23,6 @@ async def pnrhello(ctx):
 async def pnrhelp(ctx):
     await ctx.send('```【/ping】 pongと言い返すよ。テスト用だからしばらくしたらなくなるよ　【/help】このヘルプを呼び出すよ　【/hello】挨拶するよ！```')
     
-@bot.event
-async def on_message(message):
-    if message.content.startswith('/ppq'):
-        role = discord.utils.get(message.guild.roles, name='パトルプッシャーカンテサンス勢')
-        await message.author.add_roles(role)
-        reply = f'{message.author.mention} 役職を設定したよ！'
-        await message.channel.send(reply)
+
         
 bot.run(token)
