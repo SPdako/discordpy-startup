@@ -32,4 +32,25 @@ async def ppq(ctx):
     reply = f'{ctx.author.mention} 役職を設定したよ！'
     await ctx.send(reply)
         
+@bot.command()
+async def cf(ctx):
+    role = discord.utils.get(ctx.guild.roles, name='コズミックフィーバー勢')
+    await ctx.author.add_roles(role)
+    reply = f'{ctx.author.mention} 役職を設定したよ！'
+    await ctx.send(reply)
+
+@bot.command()
+async def sg(ctx):
+    role = discord.utils.get(ctx.guild.roles, name='スフィートガーデン勢')
+    await ctx.author.add_roles(role)
+    reply = f'{ctx.author.mention} 役職を設定したよ！'
+    await ctx.send(reply)
+    
+@bot.command()
+async def notpnr(ctx):
+    role = discord.utils.get(ctx.guild.roles, name='そもそもPNRやってない勢')
+    await ctx.author.add_roles(role)
+    reply = f'{ctx.author.mention} 役職を設定したよ！'
+    await ctx.send(reply)
+    
 bot.run(token)
